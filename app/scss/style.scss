@@ -57,3 +57,28 @@
         font-size: 14px;
     }
 }
+
+.search {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 533px;
+}
+
+.search__inner {
+    padding: 155px 0px 100px;
+    color: #ffffff;
+    text-align: center;
+    &-title {
+        margin-bottom: 10px;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 72px;
+    }
+    &-text {
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+}
