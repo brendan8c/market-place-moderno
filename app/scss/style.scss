@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'global';
 @import 'fonts';
+// шапка сайта
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -58,6 +59,8 @@
     }
 }
 
+// конец шапки сайта
+// страница поиска 
 .search {
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,3 +115,122 @@
         }
     }
 }
+
+// секция с разными хештегами
+.products {
+    padding: 110px 0;
+    background-color: $grey;
+}
+
+.products__inner-btn {
+    text-align: center;
+    margin-bottom: 60px;
+    button {
+        outline: none;
+        padding: 12px 21px;
+        border: none;
+        background-color: #fff;
+        color: $bg;
+        cursor: pointer;
+        &+button {
+            margin-left: 5px;
+        }
+        // Активная кнопака - задаётся самим плагином 
+        &.mixitup-control-active {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+    }
+}
+
+.products__inner-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product__iitem {
+    max-width: 442px;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    &-img {
+        min-height: 250px;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        align-items: center;
+        min-height: 90px;
+        font-weight: 500;
+        border-bottom: 1px solid #e7ecf2;
+    }
+    &-name {
+        max-width: 310px;
+    }
+    &-title {
+        color: $bg;
+        font-size: 18px;
+        display: block;
+    }
+    &-category {
+        display: block;
+        font-size: 14px;
+        color: $green;
+    }
+    &-price {
+        font-size: 20px;
+        color: $bg;
+        font-weight: 700;
+    }
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 70px;
+        padding: 10px 30px;
+    }
+    &-author {
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        span {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 14px;
+        }
+    }
+}
+
+// нижние кнопки
+.products__botton-btn {
+    text-align: center;
+    button {
+        outline: none;
+        box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+        margin: 45px 5px 0;
+        cursor: pointer;
+        border: none;
+        background-color: #fff;
+        color: $bg;
+        padding: 20px 30px;
+        // Активная кнопака - задаётся самим плагином 
+        &.mixitup-control-active {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+    }
+}
+
+// конец секции с разными хештегами
