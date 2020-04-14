@@ -1,7 +1,7 @@
 @import 'vars';
 @import 'global';
 @import 'fonts';
-// шапка сайта
+//* шапка сайта
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -59,8 +59,8 @@
     }
 }
 
-// конец шапки сайта
-// страница поиска 
+//* конец шапки сайта
+//* страница поиска 
 .search {
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,7 +116,7 @@
     }
 }
 
-// секция с разными хештегами
+// *секция с разными хештегами
 .products {
     padding: 110px 0;
     background-color: $grey;
@@ -135,7 +135,7 @@
         &+button {
             margin-left: 5px;
         }
-        // Активная кнопака - задаётся самим плагином 
+        //* Активная кнопака - задаётся самим плагином 
         &.mixitup-control-active {
             background-color: #e74c3c;
             color: #fff;
@@ -213,7 +213,7 @@
     }
 }
 
-// нижние кнопки
+// *нижние кнопки
 .products__botton-btn {
     text-align: center;
     button {
@@ -229,8 +229,13 @@
         &.mixitup-control-active {
             background-color: #e74c3c;
             color: #fff;
+            color: rgba(204, 216, 228, 0.75);
         }
     }
 }
 
-// конец секции с разными хештегами
+//* конец секции с разными хештегами
+// * слайдер
+.product-slider {
+    padding: 110px 0px 120px;
+}
