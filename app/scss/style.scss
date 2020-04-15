@@ -322,7 +322,8 @@
         margin-bottom: 25px;
         font-size: 24px;
         color: #ffffff;
-        @include f500 transition: all .5s;
+        @include f500;
+        transition: all .5s;
     }
     &-text {
         font-size: 15px;
