@@ -5,3 +5,56 @@
     font-weight: 400;
     font-display: swap;
 }
+
+// Подрубаем скачанный шрифт с https://icomoon.io
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?wdupd2');
+    src: url('../fonts/icomoon.eot?wdupd2#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?wdupd2') format('truetype'), url('../fonts/icomoon.woff?wdupd2') format('woff'), url('../fonts/icomoon.svg?wdupd2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* используйте! Важно, чтобы предотвратить проблемы с расширениями браузера, которые изменяют шрифты */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Лучший шрифт рендеринга =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-right:before {
+    content: "\f054";
+}
+
+.icon-shopping-cart:before {
+    content: "\f07a";
+}
+
+.icon-bolt:before {
+    content: "\f0e7";
+}
+
+.icon-flash:before {
+    content: "\f0e7";
+}
+
+.icon-location-arrow:before {
+    content: "\f124";
+}
+
+.icon-phone:before {
+    content: "\e942";
+}
+
+.icon-location:before {
+    content: "\e947";
+}

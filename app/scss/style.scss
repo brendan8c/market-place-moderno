@@ -419,3 +419,174 @@
 }
 
 // нижний блок где 3 бокса - конец
+// Футер начало
+.footer {
+    background-color: $bg;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0 80px;
+    }
+}
+
+.footer__copy {
+    border-top: 1px solid #424d53;
+}
+
+.footer__copy-text {
+    text-align: center;
+    font-size: 15px;
+    color: #919699;
+    padding: 25px 0;
+}
+
+// ----------
+.footer__col {
+    max-width: 270px;
+    width: 100%;
+    &-menu {
+        max-width: 220px;
+    }
+    &-title {
+        font-size: 22px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        //! тут мы добавили тонкую зелёную полоску 
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+            width: 51px;
+            height: 3px;
+            background-color: $green;
+        }
+    }
+    &-text {
+        color: #b7c3c8;
+        margin-bottom: 30px;
+    }
+}
+
+.footer__info {
+    margin-top: 18px;
+    color: #ffffff;
+    @include f500;
+    padding-left: 30px;
+    position: relative;
+    &::before {
+        font-family: 'icomoon';
+        content: '\e947';
+        color: $green;
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.footer__info-phone {
+    &::before {
+        content: '\e942';
+    }
+}
+
+.footer__col-list {
+    a {
+        margin-bottom: 15px;
+        color: #b7c3c8;
+        padding-left: 22px;
+        position: relative;
+        &:before {
+            font-family: 'icomoon';
+            content: '\f054';
+            color: $green;
+            font-size: 13px;
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+
+.footer__social-link {
+    margin-bottom: 33px;
+    li {
+        display: inline-block;
+        &+li {
+            margin-left: 7px;
+        }
+    }
+    a {
+        background-image: url(../img/css_sprites.png);
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.link-facebook {
+    background-position: 0 0;
+}
+
+.link-twitter {
+    background-position: -28px -0;
+}
+
+.link-youtube {
+    background-position: 0 -28px;
+}
+
+.link-pinterest {
+    background-position: -28px -28px;
+}
+
+.link-linledin {
+    background-position: -56px 0;
+}
+
+.footer__form-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer__form {
+    position: relative;
+    input {
+        border: none;
+        display: block;
+        width: 100%;
+        background-color: #2f3c43;
+        height: 40px;
+        color: #fff;
+        font-size: 14px;
+        padding-left: 13px;
+        padding-right: 50px;
+        outline: none;
+        &::placeholder {
+            color: #697378;
+        }
+    }
+    button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $green;
+        border: none;
+        height: 40px;
+        width: 43px;
+        outline: none;
+        cursor: pointer;
+        &::before {
+            font-family: 'icomoon';
+            content: '\f124';
+            position: absolute;
+            color: #ffffff;
+            font-size: 20px;
+            top: 11px;
+            left: 13px;
+        }
+    }
+}
